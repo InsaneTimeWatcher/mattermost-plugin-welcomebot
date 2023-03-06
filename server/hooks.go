@@ -26,6 +26,12 @@ func (p *Plugin) UserHasJoinedTeam(c *plugin.Context, teamMember *model.TeamMemb
 				if data.User.IsGuest() && !message.IncludeGuests {
 					continue
 				}
+				if data.User.IsBot && !message.IncludeBots {
+					continue
+				}
+				if strings.ContainsAny(data.User.Username, ":") {
+					continue
+				}
 				go p.processWelcomeMessage(*data, *message)
 			}
 		}

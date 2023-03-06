@@ -42,6 +42,9 @@ type ConfigMessage struct {
 
 	// Whether or not to include guest users
 	IncludeGuests bool
+
+	// Whether or not to include bots
+	IncludeBots bool
 }
 
 // Configuration from config.json

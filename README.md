@@ -67,6 +67,7 @@ where
 - **DelayInSeconds**: The number of seconds after joining a team that the user receives a welcome message.
 - **Message**: The message posted to the user.
 - (Optional) **IncludeGuests**: Whether or not to include guest users.
+- (Optional) **IncludeBots**: Whether or not to include bots.
 - (Optional) **AttachmentMessage**: Message text in attachment containing user action buttons.
 - (Optional) **Actions**: Use this to add new team members to channels automatically or based on which action button they pressed.
     - **ActionType**: One of `button` or `automatic`. When `button`: enables uses to select which types of channels they want to join. When `automatic`: the user is automatically added to the specified channels.
